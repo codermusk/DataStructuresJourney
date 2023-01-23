@@ -1,10 +1,7 @@
 package com.Tree;
 
 //import javax.swing.tree.TreeNode;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class Tree {
     public  static  void preorder(Node head){
@@ -56,7 +53,7 @@ public static Node insert(Node root , int key){
             root.right = insert(root.right , key);
 
         }
-        else if(root.val>key){
+        else {
             root.left = insert(root.left , key);
         }
         return  root  ;
@@ -174,14 +171,18 @@ public static  List<Integer>postOrderOneStack(Node head){
 }
     public static void main(String[] args) {
        Node root = new Node(20);
-       root.left = new Node(30);
-       root.right= new Node(40);
-       Tree t = new Tree();
-//       preorder(root);
-//       inorder(root);
-       postorder(root);
-      List<Integer>  l=  postOrderOneStack(root);
-      for(int i : l) System.out.println(i);
+        Scanner sc = new Scanner(System.in) ;
+       for(int  i = 0 ; i<6; i++){
+           int val = sc.nextInt();
+           insert(root , val);
+
+       }
+       List<List<Integer>> ls = bfs(root) ;
+       for(int i = 0 ; i<ls.size() ; i++){
+           for(int j : ls.get(i))
+               System.out.print(j+" ");
+           System.out.println();
+       }
 
 
 

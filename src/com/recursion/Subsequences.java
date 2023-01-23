@@ -14,11 +14,11 @@ public class Subsequences {
             return;
         }
 
-
-        ls.add(arr[index] );
-       Subeq(index+1 , ls, size , arr);
-        ls.remove(ls.size()-1);
         Subeq(index+1 , ls, size  , arr);
+        ls.add(arr[index] );
+        Subeq(index+1 , ls, size , arr);
+        ls.remove(ls.size()-1);
+
 
 
 
