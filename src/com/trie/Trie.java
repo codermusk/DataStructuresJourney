@@ -19,7 +19,6 @@ public class Trie {
         node.setEnd();
     }
 
-
     public boolean search(String word) {
         Node node = root;
         for (int i = 0; i < word.length(); i++) {
