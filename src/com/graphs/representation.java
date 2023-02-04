@@ -17,6 +17,7 @@ public class representation {
         q.add(0) ;
         while (!q.isEmpty()){
             int Node = q.poll() ;
+            arr.add(Node);
             for( Object i : adj.get(Node))
             {
                 if(vis[(int) i]!=false){
