@@ -67,4 +67,9 @@ public class prefixTrie {
         }
         node.deleteEnd();
     }
+
+    public static void main(String[] args) {
+        TrieNode t = new TrieNode();
+
+    }
 }
