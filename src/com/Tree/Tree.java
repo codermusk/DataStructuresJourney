@@ -17,7 +17,7 @@ public  static  void inorder(Node head ){
             return;
        inorder(head.left);
     System.out.println(head.val);
-    inorder(head.right);
+    inorder(head.right);    
 
 }
 

@@ -1,9 +1,6 @@
 package practice;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Collections ;
+import java.util.*;
 
 public class collections {
     public static void main(String[] args) {
@@ -14,10 +11,10 @@ public class collections {
         int size = arr.size() ;  // this size() func returns the size of the arraylist
 
         arr.add(2) ; // add function adds the element  to the arraylist
-        arr.get(3) ; // this method returns the element present at that particular index  eg : arr.get(index) this returns the elemnet in that index
+        arr.get(0) ; // this method returns the element present at that particular index  eg : arr.get(index) this returns the elemnet in that index
         arr.contains(3) ; //this returns a boolean whether true or false eg : if 2 presents in arraylist it will return true else false
 
-        arr.remove(2) ; //this func removes the value from that index
+        arr.remove(0) ; //this func removes the value from that index
         arr.clear(); //clears the entire arraylist
 
 
@@ -39,6 +36,10 @@ public class collections {
         map.put(2,2) ;// this func will create a table like this  key: 2  value :2
 
         map.get(2) ; //this will return a value present at key : 2
+        for(Map.Entry<Integer, Integer>mp : map.entrySet()){
+            System.out.println(mp.getKey()+ " " + mp.getValue());
+        }
+
 
 
 

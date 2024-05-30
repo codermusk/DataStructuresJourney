@@ -2,10 +2,10 @@ package example;
 
 public class anotherJava extends someJava{
 
-    @Override
-    public int value() {
-        return 20 ;
-    }
+//    @Override
+//    public int value() {
+//        return 20 ;
+//    }
 }
 
 class main {
