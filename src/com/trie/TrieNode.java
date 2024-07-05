@@ -29,9 +29,7 @@ public class TrieNode {
         cntEnd++;
     }
 
-    void increasePrefix(){
-        cntPre++;
-    }
+    void increasePrefix() {cntPre++;}
 
     void deleteEnd(){
         cntEnd--;
